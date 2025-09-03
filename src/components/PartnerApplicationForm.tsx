@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import { Send, Upload } from 'lucide-react';
+import React, { useState } from "react";
+import { Send } from "lucide-react";
 
 interface FormData {
   fullName: string;
@@ -13,36 +13,40 @@ interface FormData {
 
 const PartnerApplicationForm = () => {
   const [formData, setFormData] = useState<FormData>({
-    fullName: '',
-    email: '',
-    phone: '',
-    city: '',
-    hasLicense: '',
-    licenseType: '',
-    experience: ''
+    fullName: "",
+    email: "",
+    phone: "",
+    city: "",
+    hasLicense: "",
+    licenseType: "",
+    experience: "",
   });
 
-  const [cvFile, setCvFile] = useState<File | null>(null);
+  // const [cvFile, setCvFile] = useState<File | null>(null);
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSubmitted, setIsSubmitted] = useState(false);
 
-  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement>) => {
+  const handleInputChange = (
+    e: React.ChangeEvent<
+      HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement
+    >
+  ) => {
     const { name, value } = e.target;
-    setFormData(prev => ({ ...prev, [name]: value }));
+    setFormData((prev) => ({ ...prev, [name]: value }));
   };
 
-  const handleFileChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    const file = e.target.files?.[0] || null;
-    setCvFile(file);
-  };
+  // const handleFileChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+  //   const file = e.target.files?.[0] || null;
+  //   setCvFile(file);
+  // };
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
-    
+
     // Simulate form submission
-    await new Promise(resolve => setTimeout(resolve, 1500));
-    
+    await new Promise((resolve) => setTimeout(resolve, 1500));
+
     setIsSubmitting(false);
     setIsSubmitted(true);
   };
@@ -55,24 +59,26 @@ const PartnerApplicationForm = () => {
             <span className="text-white text-xl">✓</span>
           </div>
         </div>
-        <h3 className="text-2xl font-bold text-gray-900 mb-4">Application Submitted!</h3>
+        <h3 className="text-2xl font-bold text-gray-900 mb-4">
+          Application Submitted!
+        </h3>
         <p className="text-gray-600 mb-6">
-          Thank you for applying to become a Solvo delivery partner. Our HR team will review your application 
-          and contact you within 3-5 business days.
+          Thank you for applying to become a Solvo delivery partner. Our HR team
+          will review your application and contact you within 3-5 business days.
         </p>
         <button
           onClick={() => {
             setIsSubmitted(false);
             setFormData({
-              fullName: '',
-              email: '',
-              phone: '',
-              city: '',
-              hasLicense: '',
-              licenseType: '',
-              experience: ''
+              fullName: "",
+              email: "",
+              phone: "",
+              city: "",
+              hasLicense: "",
+              licenseType: "",
+              experience: "",
             });
-            setCvFile(null);
+            // setCvFile(null);
           }}
           className="bg-orange-400 hover:bg-orange-500 text-white px-6 py-2 rounded-lg transition-colors duration-200"
         >
@@ -87,7 +93,10 @@ const PartnerApplicationForm = () => {
       <form onSubmit={handleSubmit} className="space-y-6">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           <div>
-            <label htmlFor="fullName" className="block text-sm font-semibold text-gray-700 mb-2">
+            <label
+              htmlFor="fullName"
+              className="block text-sm font-semibold text-gray-700 mb-2"
+            >
               Full Name *
             </label>
             <input
@@ -103,7 +112,10 @@ const PartnerApplicationForm = () => {
           </div>
 
           <div>
-            <label htmlFor="email" className="block text-sm font-semibold text-gray-700 mb-2">
+            <label
+              htmlFor="email"
+              className="block text-sm font-semibold text-gray-700 mb-2"
+            >
               Email Address *
             </label>
             <input
@@ -121,7 +133,10 @@ const PartnerApplicationForm = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           <div>
-            <label htmlFor="phone" className="block text-sm font-semibold text-gray-700 mb-2">
+            <label
+              htmlFor="phone"
+              className="block text-sm font-semibold text-gray-700 mb-2"
+            >
               Phone Number *
             </label>
             <input
@@ -137,7 +152,10 @@ const PartnerApplicationForm = () => {
           </div>
 
           <div>
-            <label htmlFor="city" className="block text-sm font-semibold text-gray-700 mb-2">
+            <label
+              htmlFor="city"
+              className="block text-sm font-semibold text-gray-700 mb-2"
+            >
               Current City in UAE *
             </label>
             <input
@@ -163,7 +181,7 @@ const PartnerApplicationForm = () => {
                 type="radio"
                 name="hasLicense"
                 value="yes"
-                checked={formData.hasLicense === 'yes'}
+                checked={formData.hasLicense === "yes"}
                 onChange={handleInputChange}
                 required
                 className="mr-2 text-orange-500 focus:ring-orange-500"
@@ -175,7 +193,7 @@ const PartnerApplicationForm = () => {
                 type="radio"
                 name="hasLicense"
                 value="no"
-                checked={formData.hasLicense === 'no'}
+                checked={formData.hasLicense === "no"}
                 onChange={handleInputChange}
                 required
                 className="mr-2 text-orange-500 focus:ring-orange-500"
@@ -185,9 +203,12 @@ const PartnerApplicationForm = () => {
           </div>
         </div>
 
-        {formData.hasLicense === 'yes' && (
+        {formData.hasLicense === "yes" && (
           <div>
-            <label htmlFor="licenseType" className="block text-sm font-semibold text-gray-700 mb-2">
+            <label
+              htmlFor="licenseType"
+              className="block text-sm font-semibold text-gray-700 mb-2"
+            >
               License Type *
             </label>
             <select
@@ -206,7 +227,10 @@ const PartnerApplicationForm = () => {
         )}
 
         <div>
-          <label htmlFor="experience" className="block text-sm font-semibold text-gray-700 mb-2">
+          <label
+            htmlFor="experience"
+            className="block text-sm font-semibold text-gray-700 mb-2"
+          >
             Tell us briefly about your delivery experience
           </label>
           <textarea
@@ -220,7 +244,7 @@ const PartnerApplicationForm = () => {
           />
         </div>
 
-        <div>
+        {/* <div>
           <label htmlFor="cv" className="block text-sm font-semibold text-gray-700 mb-2">
             Upload Your CV (Optional)
           </label>
@@ -242,7 +266,7 @@ const PartnerApplicationForm = () => {
               </span>
             </label>
           </div>
-        </div>
+        </div> */}
 
         <button
           type="submit"
