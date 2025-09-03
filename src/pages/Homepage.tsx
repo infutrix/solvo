@@ -54,33 +54,28 @@ const Homepage = () => {
   const partners = [
     {
       name: "Talabat",
-      logo: "https://images.pexels.com/photos/4393021/pexels-photo-4393021.jpeg?auto=compress&cs=tinysrgb&w=200&h=100",
+      logo: "/companies/talabat.svg",
       category: "Food Delivery",
     },
     {
       name: "Noon",
-      logo: "https://images.pexels.com/photos/6169668/pexels-photo-6169668.jpeg?auto=compress&cs=tinysrgb&w=200&h=100",
+      logo: "/companies/noon.svg",
       category: "E-commerce",
     },
     {
       name: "Careem",
-      logo: "https://images.pexels.com/photos/4391470/pexels-photo-4391470.jpeg?auto=compress&cs=tinysrgb&w=200&h=100",
+      logo: "/companies/careem.png",
       category: "Multi-service",
     },
     {
       name: "Spinneys",
-      logo: "https://images.pexels.com/photos/5632402/pexels-photo-5632402.jpeg?auto=compress&cs=tinysrgb&w=200&h=100",
+      logo: "/companies/spinneys.svg",
       category: "Grocery",
     },
     {
       name: "Aster Pharmacy",
-      logo: "https://images.pexels.com/photos/4386467/pexels-photo-4386467.jpeg?auto=compress&cs=tinysrgb&w=200&h=100",
+      logo: "/companies/Aster-Pharmacy.png",
       category: "Healthcare",
-    },
-    {
-      name: "Emirates NBD",
-      logo: "https://images.pexels.com/photos/4386431/pexels-photo-4386431.jpeg?auto=compress&cs=tinysrgb&w=200&h=100",
-      category: "Banking",
     },
   ];
 
@@ -249,14 +244,14 @@ const Homepage = () => {
               Solvo
             </p>
           </div>
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8 items-center">
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8 items-center">
             {partners.map((partner, index) => (
               <div key={index} className="group text-center">
                 <div className="bg-white rounded-lg shadow-md hover:shadow-lg transition-all duration-200 group-hover:scale-105 mb-3">
                   <img
                     src={partner.logo}
                     alt={`${partner.name} logo`}
-                    className="w-full h-24 object-cover rounded grayscale group-hover:grayscale-0 transition-all duration-200"
+                    className="w-full h-24 object-contain p-4 rounded grayscale group-hover:grayscale-0 transition-all duration-200"
                   />
                 </div>
                 <div className="text-sm font-semibold text-gray-700">

@@ -1,6 +1,6 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
-import { Menu, X, Package } from "lucide-react";
+import { Menu, X } from "lucide-react";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -14,10 +14,7 @@ const Header = () => {
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-2 group">
-            <Package className="h-8 w-8 text-blue-700 group-hover:text-orange-400 transition-colors duration-200" />
-            <span className="text-2xl font-bold text-gray-900 group-hover:text-blue-700 transition-colors duration-200">
-              Solvo
-            </span>
+            <img src="/logo.png" alt="logo" className="w-24" />
           </Link>
 
           {/* Desktop Navigation */}
