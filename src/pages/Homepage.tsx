@@ -1,72 +1,87 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-import { Shield, TrendingUp, DollarSign, Target, MapPin, Clock, Star, Quote } from 'lucide-react';
+import React from "react";
+import { Link } from "react-router-dom";
+import {
+  Shield,
+  TrendingUp,
+  DollarSign,
+  Target,
+  MapPin,
+  Clock,
+  Star,
+  Quote,
+} from "lucide-react";
 
 const Homepage = () => {
   const features = [
     {
       icon: Shield,
       title: "Trained & Vetted Partners",
-      description: "Our riders undergo rigorous background checks and professional training."
+      description:
+        "Our riders undergo rigorous background checks and professional training.",
     },
     {
       icon: TrendingUp,
       title: "Fully Scalable Fleet",
-      description: "Easily adjust the number of riders based on your daily or seasonal demand."
+      description:
+        "Easily adjust the number of riders based on your daily or seasonal demand.",
     },
     {
       icon: DollarSign,
       title: "Cost-Effective",
-      description: "Reduce expenses on salaries, visas, insurance, and vehicle maintenance."
+      description:
+        "Reduce expenses on salaries, visas, insurance, and vehicle maintenance.",
     },
     {
       icon: Target,
       title: "Focus On Your Business",
-      description: "We handle all logistics and HR, so you can concentrate on growth."
+      description:
+        "We handle all logistics and HR, so you can concentrate on growth.",
     },
     {
       icon: Clock,
       title: "Real-Time Tracking",
-      description: "Leverage modern technology to monitor your deliveries and ensure efficiency."
+      description:
+        "Leverage modern technology to monitor your deliveries and ensure efficiency.",
     },
     {
       icon: MapPin,
       title: "Local UAE Expertise",
-      description: "Deep understanding of the routes, regulations, and market needs across the Emirates."
-    }
+      description:
+        "Deep understanding of the routes, regulations, and market needs across the Emirates.",
+    },
   ];
 
   const partners = [
     {
       name: "Talabat",
       logo: "https://images.pexels.com/photos/4393021/pexels-photo-4393021.jpeg?auto=compress&cs=tinysrgb&w=200&h=100",
-      category: "Food Delivery"
+      category: "Food Delivery",
     },
     {
       name: "Noon",
       logo: "https://images.pexels.com/photos/6169668/pexels-photo-6169668.jpeg?auto=compress&cs=tinysrgb&w=200&h=100",
-      category: "E-commerce"
+      category: "E-commerce",
     },
     {
       name: "Careem",
       logo: "https://images.pexels.com/photos/4391470/pexels-photo-4391470.jpeg?auto=compress&cs=tinysrgb&w=200&h=100",
-      category: "Multi-service"
+      category: "Multi-service",
     },
     {
       name: "Spinneys",
       logo: "https://images.pexels.com/photos/5632402/pexels-photo-5632402.jpeg?auto=compress&cs=tinysrgb&w=200&h=100",
-      category: "Grocery"
+      category: "Grocery",
     },
     {
       name: "Aster Pharmacy",
       logo: "https://images.pexels.com/photos/4386467/pexels-photo-4386467.jpeg?auto=compress&cs=tinysrgb&w=200&h=100",
-      category: "Healthcare"
+      category: "Healthcare",
     },
     {
       name: "Emirates NBD",
       logo: "https://images.pexels.com/photos/4386431/pexels-photo-4386431.jpeg?auto=compress&cs=tinysrgb&w=200&h=100",
-      category: "Banking"
-    }
+      category: "Banking",
+    },
   ];
 
   const testimonials = [
@@ -74,64 +89,75 @@ const Homepage = () => {
       name: "Ahmed Al-Mansouri",
       position: "Operations Manager",
       company: "Fresh Foods Restaurant Chain",
-      content: "Solvo transformed our delivery operations. We went from managing 15 riders internally to having a dedicated fleet of 25 professional partners. Our delivery times improved by 30% and costs reduced by 40%.",
+      content:
+        "Solvo transformed our delivery operations. We went from managing 15 riders internally to having a dedicated fleet of 25 professional partners. Our delivery times improved by 30% and costs reduced by 40%.",
       rating: 5,
-      image: "https://images.pexels.com/photos/2182970/pexels-photo-2182970.jpeg?auto=compress&cs=tinysrgb&w=150&h=150"
+      image:
+        "https://images.pexels.com/photos/2182970/pexels-photo-2182970.jpeg?auto=compress&cs=tinysrgb&w=150&h=150",
     },
     {
       name: "Sarah Johnson",
       position: "CEO",
       company: "Dubai Electronics Hub",
-      content: "The scalability Solvo offers is incredible. During Ramadan, we scaled from 8 to 20 riders seamlessly. Their professional training shows in every delivery - our customer satisfaction scores have never been higher.",
+      content:
+        "The scalability Solvo offers is incredible. During Ramadan, we scaled from 8 to 20 riders seamlessly. Their professional training shows in every delivery - our customer satisfaction scores have never been higher.",
       rating: 5,
-      image: "https://images.pexels.com/photos/3785079/pexels-photo-3785079.jpeg?auto=compress&cs=tinysrgb&w=150&h=150"
+      image:
+        "https://images.pexels.com/photos/3785079/pexels-photo-3785079.jpeg?auto=compress&cs=tinysrgb&w=150&h=150",
     },
     {
       name: "Mohammed Hassan",
       position: "Franchise Owner",
       company: "Healthy Bites Pharmacy",
-      content: "Solvo's riders are incredibly reliable for our medical deliveries. They understand the importance of timely medication delivery and handle everything with utmost care and professionalism.",
+      content:
+        "Solvo's riders are incredibly reliable for our medical deliveries. They understand the importance of timely medication delivery and handle everything with utmost care and professionalism.",
       rating: 5,
-      image: "https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=150&h=150"
-    }
+      image:
+        "https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=150&h=150",
+    },
   ];
 
   const steps = [
     {
       number: "01",
       title: "Tell Us Your Needs",
-      description: "Contact us for a free consultation to discuss your delivery volume and requirements."
+      description:
+        "Contact us for a free consultation to discuss your delivery volume and requirements.",
     },
     {
-      number: "02", 
+      number: "02",
       title: "We Deploy Your Team",
-      description: "We assign trained Solvo partners and vehicles dedicated to your business."
+      description:
+        "We assign trained Solvo partners and vehicles dedicated to your business.",
     },
     {
       number: "03",
       title: "Manage & Grow",
-      description: "Monitor your delivery operations seamlessly and scale your fleet as you grow."
-    }
+      description:
+        "Monitor your delivery operations seamlessly and scale your fleet as you grow.",
+    },
   ];
 
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
       <section className="relative bg-gradient-to-r from-blue-700 to-blue-800 text-white py-20 lg:py-32 overflow-hidden">
-        <div className="absolute inset-0 bg-black opacity-60"></div>
-        <div className="absolute inset-0 bg-cover bg-center bg-no-repeat" 
-             style={{ 
-               backgroundImage: 'url(https://images.pexels.com/photos/4393021/pexels-photo-4393021.jpeg?auto=compress&cs=tinysrgb&w=1600)'
-             }}>
-        </div>
+        <div
+          className="absolute inset-0 opacity-20 bg-cover bg-center bg-no-repeat"
+          style={{
+            backgroundImage:
+              "url(https://images.pexels.com/photos/4393021/pexels-photo-4393021.jpeg?auto=compress&cs=tinysrgb&w=1600)",
+          }}
+        ></div>
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center z-10">
           <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">
             Your Scalable Delivery Fleet,
             <span className="text-orange-400"> On Demand</span>
           </h1>
           <p className="text-xl md:text-2xl mb-10 text-white max-w-3xl mx-auto leading-relaxed drop-shadow-lg">
-            Solvo provides professional, vetted delivery partners to power your business growth across the UAE. 
-            Focus on your customers, we'll handle the logistics.
+            Solvo provides professional, vetted delivery partners to power your
+            business growth across the UAE. Focus on your customers, we'll
+            handle the logistics.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
@@ -159,25 +185,35 @@ const Homepage = () => {
                 Streamline Your Deliveries, Not Your Payroll
               </h2>
               <p className="text-lg text-gray-600 leading-relaxed mb-8">
-                Tired of the challenges of recruiting, training, and managing delivery riders? Solvo is your strategic partner. 
-                We provide a dedicated, outsourced fleet of delivery professionals, tailored to your business needs. 
-                Scale up during peak seasons and reduce costs during off-peak times, all without the HR overhead.
+                Tired of the challenges of recruiting, training, and managing
+                delivery riders? Solvo is your strategic partner. We provide a
+                dedicated, outsourced fleet of delivery professionals, tailored
+                to your business needs. Scale up during peak seasons and reduce
+                costs during off-peak times, all without the HR overhead.
               </p>
               <div className="grid grid-cols-2 gap-6">
                 <div className="text-center">
-                  <div className="text-3xl font-bold text-blue-700 mb-2">500+</div>
+                  <div className="text-3xl font-bold text-blue-700 mb-2">
+                    500+
+                  </div>
                   <div className="text-sm text-gray-600">Active Partners</div>
                 </div>
                 <div className="text-center">
-                  <div className="text-3xl font-bold text-blue-700 mb-2">50+</div>
+                  <div className="text-3xl font-bold text-blue-700 mb-2">
+                    50+
+                  </div>
                   <div className="text-sm text-gray-600">Business Clients</div>
                 </div>
                 <div className="text-center">
-                  <div className="text-3xl font-bold text-blue-700 mb-2">99.5%</div>
+                  <div className="text-3xl font-bold text-blue-700 mb-2">
+                    99.5%
+                  </div>
                   <div className="text-sm text-gray-600">On-Time Delivery</div>
                 </div>
                 <div className="text-center">
-                  <div className="text-3xl font-bold text-blue-700 mb-2">24/7</div>
+                  <div className="text-3xl font-bold text-blue-700 mb-2">
+                    24/7
+                  </div>
                   <div className="text-sm text-gray-600">Support Available</div>
                 </div>
               </div>
@@ -191,7 +227,9 @@ const Homepage = () => {
               <div className="absolute -bottom-6 -left-6 bg-white p-4 rounded-lg shadow-lg">
                 <div className="flex items-center space-x-3">
                   <div className="w-3 h-3 bg-green-500 rounded-full animate-pulse"></div>
-                  <span className="text-sm font-semibold text-gray-700">Live Tracking Active</span>
+                  <span className="text-sm font-semibold text-gray-700">
+                    Live Tracking Active
+                  </span>
                 </div>
               </div>
             </div>
@@ -207,7 +245,8 @@ const Homepage = () => {
               Trusted by Leading UAE Businesses
             </h2>
             <p className="text-gray-600">
-              Join the growing network of successful companies that rely on Solvo
+              Join the growing network of successful companies that rely on
+              Solvo
             </p>
           </div>
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8 items-center">
@@ -220,7 +259,9 @@ const Homepage = () => {
                     className="w-full h-16 object-cover rounded grayscale group-hover:grayscale-0 transition-all duration-200"
                   />
                 </div>
-                <div className="text-sm font-semibold text-gray-700">{partner.name}</div>
+                <div className="text-sm font-semibold text-gray-700">
+                  {partner.name}
+                </div>
                 <div className="text-xs text-gray-500">{partner.category}</div>
               </div>
             ))}
@@ -235,7 +276,8 @@ const Homepage = () => {
             Why Choose Solvo?
           </h2>
           <p className="text-lg text-gray-600 leading-relaxed mb-12 max-w-3xl mx-auto">
-            We're not just another delivery service. We're your strategic partner in building a world-class delivery operation.
+            We're not just another delivery service. We're your strategic
+            partner in building a world-class delivery operation.
           </p>
         </div>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -248,8 +290,12 @@ const Homepage = () => {
                 <div className="bg-blue-100 group-hover:bg-blue-200 w-16 h-16 rounded-lg flex items-center justify-center mb-6 transition-colors duration-200">
                   <feature.icon className="h-8 w-8 text-blue-700" />
                 </div>
-                <h3 className="text-xl font-semibold text-gray-900 mb-4">{feature.title}</h3>
-                <p className="text-gray-600 leading-relaxed">{feature.description}</p>
+                <h3 className="text-xl font-semibold text-gray-900 mb-4">
+                  {feature.title}
+                </h3>
+                <p className="text-gray-600 leading-relaxed">
+                  {feature.description}
+                </p>
               </div>
             ))}
           </div>
@@ -264,7 +310,8 @@ const Homepage = () => {
               What Our Clients Say
             </h2>
             <p className="text-lg text-gray-600 max-w-3xl mx-auto leading-relaxed">
-              Don't just take our word for it. Here's what business leaders across the UAE say about partnering with Solvo.
+              Don't just take our word for it. Here's what business leaders
+              across the UAE say about partnering with Solvo.
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -280,14 +327,23 @@ const Homepage = () => {
                     className="w-16 h-16 rounded-full object-cover mr-4 border-4 border-gray-100 group-hover:border-orange-200 transition-colors duration-200"
                   />
                   <div>
-                    <h4 className="font-semibold text-gray-900">{testimonial.name}</h4>
-                    <p className="text-sm text-gray-600">{testimonial.position}</p>
-                    <p className="text-sm text-blue-700 font-medium">{testimonial.company}</p>
+                    <h4 className="font-semibold text-gray-900">
+                      {testimonial.name}
+                    </h4>
+                    <p className="text-sm text-gray-600">
+                      {testimonial.position}
+                    </p>
+                    <p className="text-sm text-blue-700 font-medium">
+                      {testimonial.company}
+                    </p>
                   </div>
                 </div>
                 <div className="flex items-center mb-4">
                   {[...Array(testimonial.rating)].map((_, i) => (
-                    <Star key={i} className="h-5 w-5 text-yellow-400 fill-current" />
+                    <Star
+                      key={i}
+                      className="h-5 w-5 text-yellow-400 fill-current"
+                    />
                   ))}
                 </div>
                 <div className="relative">
@@ -311,17 +367,24 @@ const Homepage = () => {
               Get Started in 3 Simple Steps
             </h2>
             <p className="text-lg text-gray-600 max-w-2xl mx-auto leading-relaxed">
-              Our streamlined onboarding process gets your delivery operations running in no time
+              Our streamlined onboarding process gets your delivery operations
+              running in no time
             </p>
           </div>
           <div className="relative grid grid-cols-1 md:grid-cols-3 gap-8">
             {steps.map((step, index) => (
               <div key={index} className="text-center group relative">
-                <div className="bg-white border-4 border-blue-700 group-hover:border-orange-400 group-hover:bg-orange-400 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6 transition-all duration-200 group-hover:scale-110 shadow-lg">
-                  <span className="text-2xl font-bold text-white">{step.number}</span>
+                <div className="relative z-10 border-4 border-orange-400 bg-orange-400 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6 transition-all duration-200 group-hover:scale-110 shadow-lg">
+                  <span className="text-2xl font-bold text-white">
+                    {step.number}
+                  </span>
                 </div>
-                <h3 className="text-xl font-semibold text-gray-900 mb-4">{step.title}</h3>
-                <p className="text-gray-600 leading-relaxed">{step.description}</p>
+                <h3 className="text-xl font-semibold text-gray-900 mb-4">
+                  {step.title}
+                </h3>
+                <p className="text-gray-600 leading-relaxed">
+                  {step.description}
+                </p>
                 {index < steps.length - 1 && (
                   <div className="hidden md:block absolute top-10 left-1/2 w-full h-0.5 bg-gradient-to-r from-blue-300 to-orange-300 transform -translate-y-1/2 z-0"></div>
                 )}
@@ -339,7 +402,8 @@ const Homepage = () => {
               Success Stories Across the UAE
             </h2>
             <p className="text-lg text-gray-600 max-w-3xl mx-auto leading-relaxed">
-              From bustling Dubai streets to Abu Dhabi's business districts, our partners deliver excellence every day
+              From bustling Dubai streets to Abu Dhabi's business districts, our
+              partners deliver excellence every day
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -350,8 +414,12 @@ const Homepage = () => {
                 className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-200"
               />
               <div className="p-6">
-                <h4 className="font-semibold text-gray-900 mb-2">Food Delivery Excellence</h4>
-                <p className="text-sm text-gray-600">Hot meals delivered across Dubai's business districts</p>
+                <h4 className="font-semibold text-gray-900 mb-2">
+                  Food Delivery Excellence
+                </h4>
+                <p className="text-sm text-gray-600">
+                  Hot meals delivered across Dubai's business districts
+                </p>
               </div>
             </div>
             <div className="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-200 hover:-translate-y-1 group">
@@ -361,8 +429,12 @@ const Homepage = () => {
                 className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-200"
               />
               <div className="p-6">
-                <h4 className="font-semibold text-gray-900 mb-2">E-commerce Solutions</h4>
-                <p className="text-sm text-gray-600">Fast and secure package delivery nationwide</p>
+                <h4 className="font-semibold text-gray-900 mb-2">
+                  E-commerce Solutions
+                </h4>
+                <p className="text-sm text-gray-600">
+                  Fast and secure package delivery nationwide
+                </p>
               </div>
             </div>
             <div className="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-200 hover:-translate-y-1 group">
@@ -372,8 +444,12 @@ const Homepage = () => {
                 className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-200"
               />
               <div className="p-6">
-                <h4 className="font-semibold text-gray-900 mb-2">Healthcare & Pharmacy</h4>
-                <p className="text-sm text-gray-600">Critical medical supplies delivered with care</p>
+                <h4 className="font-semibold text-gray-900 mb-2">
+                  Healthcare & Pharmacy
+                </h4>
+                <p className="text-sm text-gray-600">
+                  Critical medical supplies delivered with care
+                </p>
               </div>
             </div>
             <div className="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-200 hover:-translate-y-1 group">
@@ -383,8 +459,12 @@ const Homepage = () => {
                 className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-200"
               />
               <div className="p-6">
-                <h4 className="font-semibold text-gray-900 mb-2">Professional Team</h4>
-                <p className="text-sm text-gray-600">Trained partners representing your brand</p>
+                <h4 className="font-semibold text-gray-900 mb-2">
+                  Professional Team
+                </h4>
+                <p className="text-sm text-gray-600">
+                  Trained partners representing your brand
+                </p>
               </div>
             </div>
           </div>
@@ -399,7 +479,8 @@ const Homepage = () => {
               Ready to Get Started?
             </h2>
             <p className="text-lg text-gray-600 leading-relaxed">
-              Whether you're a business looking for delivery solutions or seeking a rewarding career opportunity
+              Whether you're a business looking for delivery solutions or
+              seeking a rewarding career opportunity
             </p>
           </div>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
@@ -410,7 +491,8 @@ const Homepage = () => {
                 Ready to Optimize Your Deliveries?
               </h3>
               <p className="text-gray-600 mb-6 leading-relaxed">
-                Let us build a cost-effective and reliable delivery solution for you.
+                Let us build a cost-effective and reliable delivery solution for
+                you.
               </p>
               <div className="flex items-center space-x-4 mb-6">
                 <img

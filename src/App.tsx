@@ -1,11 +1,10 @@
-import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Header from './components/Header';
-import Footer from './components/Footer';
-import Homepage from './pages/Homepage';
-import AboutUs from './pages/AboutUs';
-import ForBusinesses from './pages/ForBusinesses';
-import BecomePartner from './pages/BecomePartner';
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Header from "./components/Header";
+import Footer from "./components/Footer";
+import Homepage from "./pages/Homepage";
+import AboutUs from "./pages/AboutUs";
+import ForBusinesses from "./pages/ForBusinesses";
+import BecomePartner from "./pages/BecomePartner";
 
 function App() {
   return (

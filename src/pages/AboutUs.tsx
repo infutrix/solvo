@@ -1,35 +1,48 @@
-import React from 'react';
-import { Users, Award, MapPin, TrendingUp, Shield, Heart, Clock, Target } from 'lucide-react';
+import React from "react";
+import {
+  Users,
+  Award,
+  MapPin,
+  TrendingUp,
+  Shield,
+  Heart,
+  Clock,
+  Target,
+} from "lucide-react";
 
 const AboutUs = () => {
   const stats = [
     { number: "2019", label: "Founded" },
     { number: "500+", label: "Active Partners" },
     { number: "50+", label: "Business Clients" },
-    { number: "7", label: "Emirates Covered" }
+    { number: "7", label: "Emirates Covered" },
   ];
 
   const values = [
     {
       icon: Shield,
       title: "Trust & Reliability",
-      description: "We build lasting relationships through consistent, dependable service and transparent communication."
+      description:
+        "We build lasting relationships through consistent, dependable service and transparent communication.",
     },
     {
       icon: Heart,
       title: "People First",
-      description: "Our success comes from treating both our partners and clients with respect, fairness, and genuine care."
+      description:
+        "Our success comes from treating both our partners and clients with respect, fairness, and genuine care.",
     },
     {
       icon: Target,
       title: "Excellence in Execution",
-      description: "We maintain the highest standards in training, service delivery, and operational efficiency."
+      description:
+        "We maintain the highest standards in training, service delivery, and operational efficiency.",
     },
     {
       icon: TrendingUp,
       title: "Innovation & Growth",
-      description: "We continuously evolve our services and technology to meet the changing needs of the UAE market."
-    }
+      description:
+        "We continuously evolve our services and technology to meet the changing needs of the UAE market.",
+    },
   ];
 
   const team = [
@@ -37,77 +50,91 @@ const AboutUs = () => {
       name: "Omar Al-Rashid",
       position: "Founder & CEO",
       bio: "With over 15 years in logistics and fleet management across the Middle East, Omar founded Solvo to revolutionize delivery services in the UAE.",
-      image: "https://images.pexels.com/photos/2182970/pexels-photo-2182970.jpeg?auto=compress&cs=tinysrgb&w=400&h=400",
-      linkedin: "#"
+      image:
+        "https://images.pexels.com/photos/2182970/pexels-photo-2182970.jpeg?auto=compress&cs=tinysrgb&w=400&h=400",
+      linkedin: "#",
     },
     {
       name: "Sarah Mitchell",
       position: "Head of Operations",
       bio: "Sarah brings 12 years of operational excellence from leading logistics companies, ensuring our partners deliver world-class service.",
-      image: "https://images.pexels.com/photos/3785079/pexels-photo-3785079.jpeg?auto=compress&cs=tinysrgb&w=400&h=400",
-      linkedin: "#"
+      image:
+        "https://images.pexels.com/photos/3785079/pexels-photo-3785079.jpeg?auto=compress&cs=tinysrgb&w=400&h=400",
+      linkedin: "#",
     },
     {
       name: "Ahmed Hassan",
       position: "Partner Relations Director",
       bio: "Ahmed leads our partner recruitment and training programs, building the most professional delivery network in the UAE.",
-      image: "https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=400&h=400",
-      linkedin: "#"
+      image:
+        "https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=400&h=400",
+      linkedin: "#",
     },
     {
       name: "Fatima Al-Zahra",
       position: "Business Development Manager",
       bio: "Fatima works closely with our business clients to understand their unique needs and develop customized delivery solutions.",
-      image: "https://images.pexels.com/photos/3756679/pexels-photo-3756679.jpeg?auto=compress&cs=tinysrgb&w=400&h=400",
-      linkedin: "#"
-    }
+      image:
+        "https://images.pexels.com/photos/3756679/pexels-photo-3756679.jpeg?auto=compress&cs=tinysrgb&w=400&h=400",
+      linkedin: "#",
+    },
   ];
 
   const milestones = [
     {
       year: "2019",
       title: "Company Founded",
-      description: "Solvo was established with a vision to transform delivery services in the UAE.",
-      image: "https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=600"
+      description:
+        "Solvo was established with a vision to transform delivery services in the UAE.",
+      image:
+        "https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=600",
     },
     {
       year: "2020",
       title: "First 100 Partners",
-      description: "Reached our first milestone of 100 trained delivery partners across Dubai and Abu Dhabi.",
-      image: "https://images.pexels.com/photos/4391470/pexels-photo-4391470.jpeg?auto=compress&cs=tinysrgb&w=600"
+      description:
+        "Reached our first milestone of 100 trained delivery partners across Dubai and Abu Dhabi.",
+      image:
+        "https://images.pexels.com/photos/4391470/pexels-photo-4391470.jpeg?auto=compress&cs=tinysrgb&w=600",
     },
     {
       year: "2022",
       title: "UAE-Wide Expansion",
-      description: "Extended operations to all seven emirates, becoming a truly national delivery partner.",
-      image: "https://images.pexels.com/photos/5632402/pexels-photo-5632402.jpeg?auto=compress&cs=tinysrgb&w=600"
+      description:
+        "Extended operations to all seven emirates, becoming a truly national delivery partner.",
+      image:
+        "https://images.pexels.com/photos/5632402/pexels-photo-5632402.jpeg?auto=compress&cs=tinysrgb&w=600",
     },
     {
       year: "2024",
       title: "Technology Innovation",
-      description: "Launched our advanced tracking and fleet management platform for enhanced efficiency.",
-      image: "https://images.pexels.com/photos/6169668/pexels-photo-6169668.jpeg?auto=compress&cs=tinysrgb&w=600"
-    }
+      description:
+        "Launched our advanced tracking and fleet management platform for enhanced efficiency.",
+      image:
+        "https://images.pexels.com/photos/6169668/pexels-photo-6169668.jpeg?auto=compress&cs=tinysrgb&w=600",
+    },
   ];
 
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
       <section className="relative bg-gradient-to-r from-blue-700 to-blue-800 text-white py-20 lg:py-32 overflow-hidden">
-        <div className="absolute inset-0 bg-black opacity-50"></div>
-        <div className="absolute inset-0 bg-cover bg-center bg-no-repeat" 
-             style={{ 
-               backgroundImage: 'url(https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=1600)'
-             }}>
-        </div>
+        <div
+          className="absolute inset-0 bg-cover opacity-20 bg-center bg-no-repeat"
+          style={{
+            backgroundImage:
+              "url(https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=1600)",
+          }}
+        ></div>
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center z-10">
           <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight drop-shadow-lg">
             Pioneering Delivery Excellence
             <span className="text-orange-400"> Across the UAE</span>
           </h1>
           <p className="text-xl md:text-2xl mb-10 text-white max-w-4xl mx-auto leading-relaxed drop-shadow-lg">
-            Since 2019, Solvo has been at the forefront of transforming how businesses approach delivery logistics. 
-            We're not just a service provider – we're your strategic partner in growth.
+            Since 2019, Solvo has been at the forefront of transforming how
+            businesses approach delivery logistics. We're not just a service
+            provider – we're your strategic partner in growth.
           </p>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 max-w-4xl mx-auto">
             {stats.map((stat, index) => (
@@ -134,18 +161,23 @@ const AboutUs = () => {
               </h2>
               <div className="space-y-6 text-lg text-gray-600 leading-relaxed">
                 <p>
-                  Solvo was born from a simple observation: businesses across the UAE were struggling with the 
-                  complexities of managing their own delivery fleets. From recruitment challenges to training 
-                  costs, from vehicle maintenance to regulatory compliance – the overhead was overwhelming.
+                  Solvo was born from a simple observation: businesses across
+                  the UAE were struggling with the complexities of managing
+                  their own delivery fleets. From recruitment challenges to
+                  training costs, from vehicle maintenance to regulatory
+                  compliance – the overhead was overwhelming.
                 </p>
                 <p>
-                  Our founders, with deep roots in the UAE's business community, recognized an opportunity to 
-                  create something different. Not just another delivery service, but a true partnership model 
-                  that would allow businesses to focus on what they do best while we handle the logistics.
+                  Our founders, with deep roots in the UAE's business community,
+                  recognized an opportunity to create something different. Not
+                  just another delivery service, but a true partnership model
+                  that would allow businesses to focus on what they do best
+                  while we handle the logistics.
                 </p>
                 <p>
-                  Today, we're proud to be the trusted delivery partner for over 50 businesses across all seven 
-                  emirates, from bustling Dubai restaurants to Abu Dhabi pharmacies, from Sharjah e-commerce 
+                  Today, we're proud to be the trusted delivery partner for over
+                  50 businesses across all seven emirates, from bustling Dubai
+                  restaurants to Abu Dhabi pharmacies, from Sharjah e-commerce
                   stores to Ajman grocery chains.
                 </p>
               </div>
@@ -173,7 +205,8 @@ const AboutUs = () => {
               Our Core Values
             </h2>
             <p className="text-lg text-gray-600 max-w-3xl mx-auto leading-relaxed">
-              These principles guide every decision we make and every relationship we build
+              These principles guide every decision we make and every
+              relationship we build
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -185,8 +218,12 @@ const AboutUs = () => {
                 <div className="bg-blue-100 group-hover:bg-orange-100 w-16 h-16 rounded-lg flex items-center justify-center mb-6 transition-colors duration-200">
                   <value.icon className="h-8 w-8 text-blue-700 group-hover:text-orange-500 transition-colors duration-200" />
                 </div>
-                <h3 className="text-xl font-semibold text-gray-900 mb-4">{value.title}</h3>
-                <p className="text-gray-600 leading-relaxed">{value.description}</p>
+                <h3 className="text-xl font-semibold text-gray-900 mb-4">
+                  {value.title}
+                </h3>
+                <p className="text-gray-600 leading-relaxed">
+                  {value.description}
+                </p>
               </div>
             ))}
           </div>
@@ -201,14 +238,17 @@ const AboutUs = () => {
               Our Journey of Growth
             </h2>
             <p className="text-lg text-gray-600 max-w-3xl mx-auto leading-relaxed">
-              From a startup vision to the UAE's leading delivery partner network
+              From a startup vision to the UAE's leading delivery partner
+              network
             </p>
           </div>
           <div className="space-y-12">
             {milestones.map((milestone, index) => (
               <div
                 key={index}
-                className={`flex flex-col ${index % 2 === 0 ? 'lg:flex-row' : 'lg:flex-row-reverse'} gap-8 items-center`}
+                className={`flex flex-col ${
+                  index % 2 === 0 ? "lg:flex-row" : "lg:flex-row-reverse"
+                } gap-8 items-center`}
               >
                 <div className="lg:w-1/2">
                   <img
@@ -242,7 +282,8 @@ const AboutUs = () => {
               Meet Our Leadership Team
             </h2>
             <p className="text-lg text-gray-600 max-w-3xl mx-auto leading-relaxed">
-              Experienced professionals dedicated to delivering excellence across the UAE
+              Experienced professionals dedicated to delivering excellence
+              across the UAE
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -260,9 +301,15 @@ const AboutUs = () => {
                   <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-200"></div>
                 </div>
                 <div className="p-6">
-                  <h3 className="text-xl font-semibold text-gray-900 mb-2">{member.name}</h3>
-                  <p className="text-orange-500 font-medium mb-4">{member.position}</p>
-                  <p className="text-gray-600 text-sm leading-relaxed">{member.bio}</p>
+                  <h3 className="text-xl font-semibold text-gray-900 mb-2">
+                    {member.name}
+                  </h3>
+                  <p className="text-orange-500 font-medium mb-4">
+                    {member.position}
+                  </p>
+                  <p className="text-gray-600 text-sm leading-relaxed">
+                    {member.bio}
+                  </p>
                 </div>
               </div>
             ))}
@@ -280,11 +327,14 @@ const AboutUs = () => {
                 <div className="bg-blue-700 w-16 h-16 rounded-lg flex items-center justify-center mb-6">
                   <Target className="h-8 w-8 text-white" />
                 </div>
-                <h3 className="text-2xl font-bold text-gray-900 mb-6">Our Mission</h3>
+                <h3 className="text-2xl font-bold text-gray-900 mb-6">
+                  Our Mission
+                </h3>
                 <p className="text-lg text-gray-600 leading-relaxed mb-6">
-                  To empower businesses across the UAE by providing scalable, professional delivery solutions 
-                  that eliminate operational complexity while creating meaningful employment opportunities for 
-                  skilled delivery professionals.
+                  To empower businesses across the UAE by providing scalable,
+                  professional delivery solutions that eliminate operational
+                  complexity while creating meaningful employment opportunities
+                  for skilled delivery professionals.
                 </p>
                 <div className="bg-white p-4 rounded-lg shadow-md">
                   <img
@@ -302,11 +352,14 @@ const AboutUs = () => {
                 <div className="bg-orange-400 w-16 h-16 rounded-lg flex items-center justify-center mb-6">
                   <Award className="h-8 w-8 text-white" />
                 </div>
-                <h3 className="text-2xl font-bold text-gray-900 mb-6">Our Vision</h3>
+                <h3 className="text-2xl font-bold text-gray-900 mb-6">
+                  Our Vision
+                </h3>
                 <p className="text-lg text-gray-600 leading-relaxed mb-6">
-                  To become the Middle East's most trusted delivery partner network, setting the gold standard 
-                  for professional logistics services while fostering economic growth and employment opportunities 
-                  throughout the region.
+                  To become the Middle East's most trusted delivery partner
+                  network, setting the gold standard for professional logistics
+                  services while fostering economic growth and employment
+                  opportunities throughout the region.
                 </p>
                 <div className="bg-white p-4 rounded-lg shadow-md">
                   <img
@@ -335,8 +388,13 @@ const AboutUs = () => {
                     <Users className="h-6 w-6 text-blue-700" />
                   </div>
                   <div>
-                    <h4 className="text-lg font-semibold text-gray-900 mb-2">Partnership, Not Just Service</h4>
-                    <p className="text-gray-600">We don't just provide riders – we become an extension of your team, understanding your brand and values.</p>
+                    <h4 className="text-lg font-semibold text-gray-900 mb-2">
+                      Partnership, Not Just Service
+                    </h4>
+                    <p className="text-gray-600">
+                      We don't just provide riders – we become an extension of
+                      your team, understanding your brand and values.
+                    </p>
                   </div>
                 </div>
                 <div className="flex items-start space-x-4">
@@ -344,8 +402,13 @@ const AboutUs = () => {
                     <Clock className="h-6 w-6 text-orange-500" />
                   </div>
                   <div>
-                    <h4 className="text-lg font-semibold text-gray-900 mb-2">Rapid Deployment</h4>
-                    <p className="text-gray-600">Get your delivery operations running within 48 hours of partnership agreement.</p>
+                    <h4 className="text-lg font-semibold text-gray-900 mb-2">
+                      Rapid Deployment
+                    </h4>
+                    <p className="text-gray-600">
+                      Get your delivery operations running within 48 hours of
+                      partnership agreement.
+                    </p>
                   </div>
                 </div>
                 <div className="flex items-start space-x-4">
@@ -353,8 +416,13 @@ const AboutUs = () => {
                     <MapPin className="h-6 w-6 text-green-600" />
                   </div>
                   <div>
-                    <h4 className="text-lg font-semibold text-gray-900 mb-2">Local Expertise</h4>
-                    <p className="text-gray-600">Deep understanding of UAE regulations, routes, and cultural nuances across all emirates.</p>
+                    <h4 className="text-lg font-semibold text-gray-900 mb-2">
+                      Local Expertise
+                    </h4>
+                    <p className="text-gray-600">
+                      Deep understanding of UAE regulations, routes, and
+                      cultural nuances across all emirates.
+                    </p>
                   </div>
                 </div>
               </div>
@@ -389,41 +457,56 @@ const AboutUs = () => {
       <section className="py-20 bg-white">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="bg-gradient-to-r from-blue-700 to-blue-800 rounded-2xl p-12 text-white text-center relative overflow-hidden">
-            <div className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-20" 
-                 style={{ 
-                   backgroundImage: 'url(https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=1200)'
-                 }}>
-            </div>
+            <div
+              className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-20"
+              style={{
+                backgroundImage:
+                  "url(https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=1200)",
+              }}
+            ></div>
             <div className="relative z-10">
               <h2 className="text-3xl md:text-4xl font-bold mb-6">
                 Our Commitment to the UAE
               </h2>
               <p className="text-xl text-blue-100 leading-relaxed max-w-4xl mx-auto mb-8">
-                We're committed to contributing to the UAE's vision of becoming a global logistics hub. 
-                Through our services, we support local businesses in their growth while providing stable, 
-                dignified employment opportunities for residents across all emirates.
+                We're committed to contributing to the UAE's vision of becoming
+                a global logistics hub. Through our services, we support local
+                businesses in their growth while providing stable, dignified
+                employment opportunities for residents across all emirates.
               </p>
               <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12">
                 <div className="text-center">
                   <div className="bg-white/20 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
                     <Users className="h-8 w-8 text-white" />
                   </div>
-                  <h4 className="text-lg font-semibold mb-2">Community Impact</h4>
-                  <p className="text-blue-100 text-sm">Creating jobs and supporting local economic growth</p>
+                  <h4 className="text-lg font-semibold mb-2">
+                    Community Impact
+                  </h4>
+                  <p className="text-blue-100 text-sm">
+                    Creating jobs and supporting local economic growth
+                  </p>
                 </div>
                 <div className="text-center">
                   <div className="bg-white/20 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
                     <Shield className="h-8 w-8 text-white" />
                   </div>
-                  <h4 className="text-lg font-semibold mb-2">Quality Assurance</h4>
-                  <p className="text-blue-100 text-sm">Maintaining the highest standards in every delivery</p>
+                  <h4 className="text-lg font-semibold mb-2">
+                    Quality Assurance
+                  </h4>
+                  <p className="text-blue-100 text-sm">
+                    Maintaining the highest standards in every delivery
+                  </p>
                 </div>
                 <div className="text-center">
                   <div className="bg-white/20 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
                     <TrendingUp className="h-8 w-8 text-white" />
                   </div>
-                  <h4 className="text-lg font-semibold mb-2">Innovation Focus</h4>
-                  <p className="text-blue-100 text-sm">Continuously improving through technology and training</p>
+                  <h4 className="text-lg font-semibold mb-2">
+                    Innovation Focus
+                  </h4>
+                  <p className="text-blue-100 text-sm">
+                    Continuously improving through technology and training
+                  </p>
                 </div>
               </div>
             </div>
@@ -438,8 +521,9 @@ const AboutUs = () => {
             Ready to Partner with Solvo?
           </h2>
           <p className="text-lg text-gray-600 leading-relaxed mb-10 max-w-3xl mx-auto">
-            Whether you're a business looking to optimize your delivery operations or a professional 
-            seeking a rewarding career opportunity, we're here to help you succeed.
+            Whether you're a business looking to optimize your delivery
+            operations or a professional seeking a rewarding career opportunity,
+            we're here to help you succeed.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a

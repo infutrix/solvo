@@ -1,6 +1,6 @@
-import React, { useState } from 'react';
-import { Link, useLocation } from 'react-router-dom';
-import { Menu, X, Package } from 'lucide-react';
+import React, { useState } from "react";
+import { Link, useLocation } from "react-router-dom";
+import { Menu, X, Package } from "lucide-react";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -25,7 +25,7 @@ const Header = () => {
             <Link
               to="/"
               className={`text-gray-700 hover:text-blue-700 px-3 py-2 text-sm font-medium transition-colors duration-200 ${
-                isActive('/') ? 'text-blue-700 border-b-2 border-blue-700' : ''
+                isActive("/") ? "text-blue-700 border-b-2 border-blue-700" : ""
               }`}
             >
               Home
@@ -33,7 +33,9 @@ const Header = () => {
             <Link
               to="/about"
               className={`text-gray-700 hover:text-blue-700 px-3 py-2 text-sm font-medium transition-colors duration-200 ${
-                isActive('/about') ? 'text-blue-700 border-b-2 border-blue-700' : ''
+                isActive("/about")
+                  ? "text-blue-700 border-b-2 border-blue-700"
+                  : ""
               }`}
             >
               About Us
@@ -41,7 +43,9 @@ const Header = () => {
             <Link
               to="/for-businesses"
               className={`text-gray-700 hover:text-blue-700 px-3 py-2 text-sm font-medium transition-colors duration-200 ${
-                isActive('/for-businesses') ? 'text-blue-700 border-b-2 border-blue-700' : ''
+                isActive("/for-businesses")
+                  ? "text-blue-700 border-b-2 border-blue-700"
+                  : ""
               }`}
             >
               For Businesses
@@ -49,17 +53,13 @@ const Header = () => {
             <Link
               to="/become-partner"
               className={`text-gray-700 hover:text-blue-700 px-3 py-2 text-sm font-medium transition-colors duration-200 ${
-                isActive('/become-partner') ? 'text-blue-700 border-b-2 border-blue-700' : ''
+                isActive("/become-partner")
+                  ? "text-blue-700 border-b-2 border-blue-700"
+                  : ""
               }`}
             >
               Become a Partner
             </Link>
-            <a
-              href="#contact"
-              className="text-gray-700 hover:text-blue-700 px-3 py-2 text-sm font-medium transition-colors duration-200"
-            >
-              Contact Us
-            </a>
           </div>
 
           {/* CTA Button */}
@@ -78,7 +78,11 @@ const Header = () => {
               onClick={() => setIsMenuOpen(!isMenuOpen)}
               className="text-gray-700 hover:text-blue-700 p-2 transition-colors duration-200"
             >
-              {isMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
+              {isMenuOpen ? (
+                <X className="h-6 w-6" />
+              ) : (
+                <Menu className="h-6 w-6" />
+              )}
             </button>
           </div>
         </div>
@@ -90,7 +94,7 @@ const Header = () => {
               <Link
                 to="/"
                 className={`block px-3 py-2 text-gray-700 hover:text-blue-700 hover:bg-gray-50 rounded transition-colors duration-200 ${
-                  isActive('/') ? 'text-blue-700 bg-blue-50' : ''
+                  isActive("/") ? "text-blue-700 bg-blue-50" : ""
                 }`}
                 onClick={() => setIsMenuOpen(false)}
               >
@@ -99,7 +103,7 @@ const Header = () => {
               <Link
                 to="/about"
                 className={`block px-3 py-2 text-gray-700 hover:text-blue-700 hover:bg-gray-50 rounded transition-colors duration-200 ${
-                  isActive('/about') ? 'text-blue-700 bg-blue-50' : ''
+                  isActive("/about") ? "text-blue-700 bg-blue-50" : ""
                 }`}
                 onClick={() => setIsMenuOpen(false)}
               >
@@ -108,7 +112,7 @@ const Header = () => {
               <Link
                 to="/for-businesses"
                 className={`block px-3 py-2 text-gray-700 hover:text-blue-700 hover:bg-gray-50 rounded transition-colors duration-200 ${
-                  isActive('/for-businesses') ? 'text-blue-700 bg-blue-50' : ''
+                  isActive("/for-businesses") ? "text-blue-700 bg-blue-50" : ""
                 }`}
                 onClick={() => setIsMenuOpen(false)}
               >
@@ -117,7 +121,7 @@ const Header = () => {
               <Link
                 to="/become-partner"
                 className={`block px-3 py-2 text-gray-700 hover:text-blue-700 hover:bg-gray-50 rounded transition-colors duration-200 ${
-                  isActive('/become-partner') ? 'text-blue-700 bg-blue-50' : ''
+                  isActive("/become-partner") ? "text-blue-700 bg-blue-50" : ""
                 }`}
                 onClick={() => setIsMenuOpen(false)}
               >

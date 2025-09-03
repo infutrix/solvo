@@ -1,6 +1,13 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-import { Package, Phone, Mail, MapPin, Linkedin, Instagram } from 'lucide-react';
+import React from "react";
+import { Link } from "react-router-dom";
+import {
+  Package,
+  Phone,
+  Mail,
+  MapPin,
+  Linkedin,
+  Instagram,
+} from "lucide-react";
 
 const Footer = () => {
   return (
@@ -14,8 +21,9 @@ const Footer = () => {
               <span className="text-2xl font-bold">Solvo</span>
             </div>
             <p className="text-gray-300 text-sm leading-relaxed">
-              Professional delivery partner solutions for businesses across the UAE. 
-              We recruit, train, and manage delivery fleets so you can focus on growing your business.
+              Professional delivery partner solutions for businesses across the
+              UAE. We recruit, train, and manage delivery fleets so you can
+              focus on growing your business.
             </p>
           </div>
 
@@ -23,21 +31,30 @@ const Footer = () => {
           <div className="col-span-1">
             <h3 className="text-lg font-semibold mb-4">Quick Links</h3>
             <div className="space-y-2">
-              <Link to="/" className="block text-gray-300 hover:text-orange-400 text-sm transition-colors duration-200">
+              <Link
+                to="/"
+                className="block text-gray-300 hover:text-orange-400 text-sm transition-colors duration-200"
+              >
                 Home
               </Link>
-              <Link to="/about" className="block text-gray-300 hover:text-orange-400 text-sm transition-colors duration-200">
+              <Link
+                to="/about"
+                className="block text-gray-300 hover:text-orange-400 text-sm transition-colors duration-200"
+              >
                 About Us
               </Link>
-              <Link to="/for-businesses" className="block text-gray-300 hover:text-orange-400 text-sm transition-colors duration-200">
+              <Link
+                to="/for-businesses"
+                className="block text-gray-300 hover:text-orange-400 text-sm transition-colors duration-200"
+              >
                 For Businesses
               </Link>
-              <Link to="/become-partner" className="block text-gray-300 hover:text-orange-400 text-sm transition-colors duration-200">
+              <Link
+                to="/become-partner"
+                className="block text-gray-300 hover:text-orange-400 text-sm transition-colors duration-200"
+              >
                 Become a Partner
               </Link>
-              <a href="#contact" className="block text-gray-300 hover:text-orange-400 text-sm transition-colors duration-200">
-                Contact Us
-              </a>
             </div>
           </div>
 
@@ -48,7 +65,9 @@ const Footer = () => {
               <div className="flex items-start space-x-3">
                 <MapPin className="h-5 w-5 text-orange-400 mt-0.5 flex-shrink-0" />
                 <span className="text-gray-300 text-sm">
-                  Business Bay, Dubai,<br />United Arab Emirates
+                  Business Bay, Dubai,
+                  <br />
+                  United Arab Emirates
                 </span>
               </div>
               <div className="flex items-center space-x-3">
