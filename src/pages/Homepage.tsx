@@ -252,11 +252,11 @@ const Homepage = () => {
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8 items-center">
             {partners.map((partner, index) => (
               <div key={index} className="group text-center">
-                <div className="bg-white p-4 rounded-lg shadow-md hover:shadow-lg transition-all duration-200 group-hover:scale-105 mb-3">
+                <div className="bg-white rounded-lg shadow-md hover:shadow-lg transition-all duration-200 group-hover:scale-105 mb-3">
                   <img
                     src={partner.logo}
                     alt={`${partner.name} logo`}
-                    className="w-full h-16 object-cover rounded grayscale group-hover:grayscale-0 transition-all duration-200"
+                    className="w-full h-24 object-cover rounded grayscale group-hover:grayscale-0 transition-all duration-200"
                   />
                 </div>
                 <div className="text-sm font-semibold text-gray-700">
