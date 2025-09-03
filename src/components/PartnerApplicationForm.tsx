@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Send } from "lucide-react";
+import emailjs from "@emailjs/browser";
 
 interface FormData {
   fullName: string;
@@ -40,15 +41,28 @@ const PartnerApplicationForm = () => {
   //   setCvFile(file);
   // };
 
-  const handleSubmit = async (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setIsSubmitting(true);
 
-    // Simulate form submission
-    await new Promise((resolve) => setTimeout(resolve, 1500));
-
-    setIsSubmitting(false);
-    setIsSubmitted(true);
+    emailjs
+      .sendForm(
+        import.meta.env.VITE_APP_SERVICE_ID!,
+        import.meta.env.VITE_APP_TEMPLATE_ID!,
+        e.currentTarget,
+        import.meta.env.VITE_APP_PUBLIC_KEY!
+      )
+      .then(
+        () => {
+          setIsSubmitted(true);
+        },
+        (error) => {
+          console.log(error);
+        }
+      )
+      .finally(() => {
+        setIsSubmitting(false);
+      });
   };
 
   if (isSubmitted) {
